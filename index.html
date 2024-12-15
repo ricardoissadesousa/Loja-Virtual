@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Eletrônicos </title>
+    <link rel="stylesheet" href="stayle.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1> RicardoEletro </h1>
+    <p>Os melhores eletrônicos com os melhores preços!</p>
+</header>
+
+<nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato">Contato</a>
+    <a href="#" onclick="toggleCarrinho()"><i class="fas fa-shopping-cart"></i></a>
+    <div id="carrinho" class="carrinho-suspenso">
+        <h3>Seu Carrinho</h3>
+        <div id="itens-carrinho"></div>
+        <p id="total">Total: R$ 0,00</p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+</nav>
+
+<main class="container">
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="img/celular.jpg" alt="Smartphone">
+                <h3>Smartphone XYZ</h3>
+                <p>Smartphone com tela de 6.5 polegadas e câmera de 48MP.</p>
+                <span>R$ 6.499,99</span>
+                <button onclick="adicionarAoCarrinho('Smartphone XYZ', 6499.99)">add</button>
+
+            </div>
+            <div class="product">
+                <img src="img/note.jpg" alt="Notebook">
+                <h3>Notebook ABC</h3>
+                <p>Notebook com processador Intel i7 e 16GB de RAM.</p>
+                <span>R$ 3.299,99</span>
+                <button onclick="adicionarAoCarrinho('Notebook ABC', 3299.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/fone.jpg" alt="Fone de Ouvido">
+                <h3>Fone de Ouvido Bluetooth</h3>
+                <p>Fone sem fio com cancelamento de ruído.</p>
+                <span>R$ 199,99</span>
+                <button onclick="adicionarAoCarrinho('Fone de Ouvido Bluetooth', 199.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/relogio.jpg" alt="Smartwatch">
+                <h3>Smartwatch DEF</h3>
+                <p>Relógio inteligente com monitoramento de saúde e atividades.</p>
+                <span>R$ 699,99</span>
+                <button onclick="adicionarAoCarrinho('Smartwatch DEF', 699.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/teclado.jpg" alt="Teclado Mecânico">
+                <h3>Teclado Mecânico GHI</h3>
+                <p>Teclado mecânico com retroiluminação RGB.</p>
+                <span>R$ 399,99</span>
+                <button onclick="adicionarAoCarrinho('Teclado Mecânico GHI', 399.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/mouse.jpg" alt="Mouse Gamer">
+                <h3>Mouse Gamer JKL</h3>
+                <p>Mouse com alta precisão e iluminação personalizável.</p>
+                <span>R$ 94,99</span>
+                <button onclick="adicionarAoCarrinho('Mouse Gamer JKL', 94.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/camera.jpg" alt="Câmera Digital">
+                <h3>Câmera Digital MNO</h3>
+                <p>Câmera de 20MP com lente intercambiável.</p>
+                <span>R$ 2.199,99</span>
+                <button onclick="adicionarAoCarrinho('Câmera Digital MNO', 2199.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/drone.jpg" alt="Drone PQR">
+                <h3>Drone PQR</h3>
+                <p>Drone com câmera 4K e controle remoto.</p>
+                <span>R$ 1.999,99</span>
+                <button onclick="adicionarAoCarrinho('Drone PQR', 1999.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/projetor.jpg" alt="Projetor STU">
+                <h3>Projetor STU</h3>
+                <p>Projetor portátil com qualidade Full HD.</p>
+                <span>R$ 249,99</span>
+                <button onclick="adicionarAoCarrinho('Projetor STU', 249.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/carregador.jpg" alt="Carregador Portátil">
+                <h3>Carregador Portátil VWX</h3>
+                <p>Carregador portátil com capacidade de 20.000mAh.</p>
+                <span>R$ 129,99</span>
+                <button onclick="adicionarAoCarrinho('Carregador Portátil VWX', 129.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/caixa_som.jpg" alt="Caixa de Som">
+                <h3>Caixa de Som Bluetooth YZA</h3>
+                <p>Caixa de som à prova d'água com som potente.</p>
+                <span>R$ 2.499,99</span>
+                <button onclick="adicionarAoCarrinho('Caixa de Som Bluetooth YZA', 2499.99)">add</button>
+            </div>
+            <div class="product">
+                <img src="img/monitor.jpg" alt="Monitor Gamer ">
+                <h3> Monitor gamer </h3>
+                <p>Caixa de som à prova d'água com som potente.</p>
+                <span>R$ 999,99</span>
+                <button onclick="adicionarAoCarrinho('Monitor gamer', 999.99)">add</button>
+            </div>
+        </div>
+    </section>
+    <section id="prox-pagina">
+        <div class="paginas">
+          <p><a href="">1</a>, <a href="">2</a>, <a href="">3</a>, <a href="">4</a> ...</p>
+
+
+        </div>
+    </section>
+
+   
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <h3>1. Como faço para comprar?</h3>
+        <p>Basta adicionar os produtos ao seu carrinho e seguir o processo de checkout.</p>
+
+        <h3>2. Quais são as formas de pagamento?</h3>
+        <p>Aceitamos cartões de crédito, débito e boleto bancário.</p>
+
+        <h3>3. Qual o prazo de entrega?</h3>
+        <p>O prazo de entrega varia de 5 a 10 dias úteis, dependendo da sua localidade.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: suporte@RicAEtro.com.br</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Ricardo Issa . Todos os direitos reservados.</p>
+    <p><a href="#contato">Entre em contato</a> | <a href="#faq">Ric</a></p>
+</footer>
+
+</body>
+</html>

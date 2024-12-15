@@ -1,0 +1,199 @@
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte principal */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    background-color: #f0f0f0; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #007bff; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 20px; /* Preenchimento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao cabeçalho */
+}
+
+/* Estilos para o título no cabeçalho */
+header h1 {
+    margin: 0; /* Remove margens */
+    font-size: 2.5em; /* Define o tamanho da fonte */
+}
+
+/* Estilos para a navegação */
+nav {
+    background-color: #0056b3; /* Cor de fundo da navegação */
+    padding: 15px; /* Preenchimento interno da navegação */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para os links de navegação */
+nav a {
+    color: white; /* Cor do texto dos links */
+    margin: 0 20px; /* Margem entre os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Define a fonte em negrito */
+}
+
+/* Estilos para os links de navegação ao passar o mouse */
+nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #ffc107; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Estilos para o container principal */
+.container {
+    padding: 20px; /* Preenchimento interno do container */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: auto; /* Centraliza o container */
+}
+
+/* Estilos para os cabeçalhos h2 */
+h2 {
+    border-bottom: 2px solid #007bff; /* Adiciona uma borda inferior */
+    padding-bottom: 10px; /* Preenchimento interno na parte inferior */
+    margin-bottom: 20px; /* Margem abaixo do cabeçalho */
+}
+
+/* Estilos para a seção de produtos */
+.products {
+    display: flex; /* Usa flexbox para os produtos */
+    flex-wrap: wrap; /* Permite que os itens sejam distribuídos em várias linhas */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+
+/* Estilos para cada produto individual */
+.product {
+    background-color: white; /* Cor de fundo dos produtos */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 15px; /* Margem ao redor dos produtos */
+    padding: 15px; /* Preenchimento interno dos produtos */
+    width: calc(25% - 30px); /* Largura ajustável dos produtos */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra aos produtos */
+    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+}
+
+/* Estilos para os produtos ao passar o mouse */
+.product:hover {
+    transform: translateY(-5px); /* Move os produtos para cima ao passar o mouse */
+}
+
+/* Estilos para as imagens dos produtos */
+.product img {
+    max-width: 100%; /* Largura máxima 100% do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #007bff; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    padding: 15px; /* Preenchimento interno do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    position: relative; /* Posição relativa */
+    bottom: 0; /* Alinha ao fundo da página */
+    width: 100%; /* Largura completa do rodapé */
+    margin-top: 30px; /* Margem acima do rodapé */
+}
+
+/* Estilos para os parágrafos dentro do rodapé */
+footer p {
+    margin: 5px 0; /* Margem vertical dos parágrafos */
+}
+
+/* Estilos para os links dentro do rodapé */
+footer a {
+    color: #ffc107; /* Cor dos links no rodapé */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estilos para os links dentro do rodapé ao passar o mouse */
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para os botões */
+button {
+    background-color: green; /* Cor de fundo do botão */
+    border-radius: 50px; /* Bordas arredondadas */
+    width: 50px; /* Largura do botão */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos para a paginação */
+.paginas {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Usa flexbox para exibir os itens */
+    justify-content: center; /* Centraliza os itens */
+    font-size: 20px; /* Tamanho da fonte */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+/* Estilos para os links dentro da paginação */
+.paginas a {
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 10px; /* Largura dos itens */
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estilos para o carrinho suspenso */
+.carrinho-suspenso {
+    display: none; /* Oculta o carrinho por padrão */
+    position: absolute; /* Posicionamento absoluto */
+    top: 60px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    background: #fff; /* Cor de fundo branca */
+    width: 250px; /* Largura do carrinho */
+    border: 1px solid #ddd; /* Borda sólida */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Preenchimento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 1000; /* Nível de sobreposição */
+}
+
+/* Estilos para o cabeçalho do carrinho suspenso */
+.carrinho-suspenso h3 {
+    margin: 0; /* Remove margens */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para a lista de itens do carrinho */
+#itens-carrinho {
+    margin-top: 10px; /* Margem superior */
+    max-height: 200px; /* Altura máxima com rolagem */
+    overflow-y: auto; /* Rolagem vertical automática */
+}
+
+/* Estilos para cada item do carrinho */
+.item-carrinho {
+    display: flex; /* Usa flexbox para os itens */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha itens ao centro */
+    padding: 5px 0; /* Preenchimento interno vertical */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para o total do carrinho */
+#total {
+    font-weight: bold; /* Negrito */
+    margin: 10px 0; /* Margem vertical */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para os botões do carrinho suspenso */
+.carrinho-suspenso button {
+    padding: 8px 12px; /* Preenchimento interno */
+    background-color: #ffd700; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    width: 100%; /* Largura completa */
+}
